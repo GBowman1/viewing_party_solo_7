@@ -1,0 +1,10 @@
+<h1>Movie Results</h1>
+
+
+<ul>
+    <% @movies.each do |movie| %>
+        <li>
+            <%= movie[:title] %> <%= movie[:release_date] %>
+        </li>
+    <% end %>
+</ul>

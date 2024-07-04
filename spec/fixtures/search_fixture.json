@@ -1,0 +1,389 @@
+{
+    "page": 1,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
+            "genre_ids": [
+                18,
+                80
+            ],
+            "id": 238,
+            "original_language": "en",
+            "original_title": "The Godfather",
+            "overview": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+            "popularity": 150.976,
+            "poster_path": "/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+            "release_date": "1972-03-14",
+            "title": "The Godfather",
+            "video": false,
+            "vote_average": 8.7,
+            "vote_count": 20021
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/zNnjHLDtV8Ti3aworltaeaLMov4.jpg",
+            "genre_ids": [
+                80,
+                18,
+                53
+            ],
+            "id": 242,
+            "original_language": "en",
+            "original_title": "The Godfather Part III",
+            "overview": "In the midst of trying to legitimize his business dealings in 1979 New York and Italy, aging mafia don, Michael Corleone seeks forgiveness for his sins while taking a young protege under his wing.",
+            "popularity": 195.201,
+            "poster_path": "/lm3pQ2QoQ16pextRsmnUbG2onES.jpg",
+            "release_date": "1990-12-25",
+            "title": "The Godfather Part III",
+            "video": false,
+            "vote_average": 7.429,
+            "vote_count": 6010
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/b6w7gKLQLS2zw4JK0XmKgQ4gnzr.jpg",
+            "genre_ids": [
+                18,
+                80
+            ],
+            "id": 240,
+            "original_language": "en",
+            "original_title": "The Godfather Part II",
+            "overview": "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba.",
+            "popularity": 86.774,
+            "poster_path": "/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
+            "release_date": "1974-12-20",
+            "title": "The Godfather Part II",
+            "video": false,
+            "vote_average": 8.6,
+            "vote_count": 12086
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                80,
+                35
+            ],
+            "id": 1050474,
+            "original_language": "en",
+            "original_title": "The Godfather",
+            "overview": "An angry comedy set in the world of really organized crime.",
+            "popularity": 3.275,
+            "poster_path": "/hGiNkRgXTkF4C6WplyPrglEKtd0.jpg",
+            "release_date": "2023-01-28",
+            "title": "The Godfather",
+            "video": false,
+            "vote_average": 2.0,
+            "vote_count": 1
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/baKUm23wuT8AqDu2ucx5bgfqETN.jpg",
+            "genre_ids": [
+                80,
+                28,
+                35,
+                18
+            ],
+            "id": 25074,
+            "original_language": "cn",
+            "original_title": "奇蹟",
+            "overview": "A country boy becomes the head of a gang through the purchase of some lucky roses from an old lady. He and a singer at the gang's nightclub try to do a good deed for the old lady when her daughter comes to visit.",
+            "popularity": 13.653,
+            "poster_path": "/70OnveJQzlYji1TOoODNGrU9Mjj.jpg",
+            "release_date": "1989-06-15",
+            "title": "Miracles: The Canton Godfather",
+            "video": false,
+            "vote_average": 7.146,
+            "vote_count": 154
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                99,
+                10770
+            ],
+            "id": 294636,
+            "original_language": "en",
+            "original_title": "The Godfather Legacy",
+            "overview": "THE GODFATHER LEGACY goes deep inside Francis Ford Coppola's epic saga about the Corleone crime family and reveals how the Academy Award-winning film and its sequels became one of the most acclaimed franchises in Hollywood history. Featuring iconic scenes from all three films, never before seen home movies and insightful interviews with filmmakers (Francis Ford Coppola, All Ruddy and Peter Bart), actors (Al Pacino, James Caan, Talia Shire, Joe Mantegna, et al.), law enforcement officials and even former Mafia members. This feature length documentary illustrates why The Godfather trilogy continues to entertain and fascinate audiences and how it continues to impact the way society views everything from capitalism to crime.",
+            "popularity": 3.458,
+            "poster_path": "/9y9w5prvVjBtwWl9TNtvThL0NNi.jpg",
+            "release_date": "2012-07-12",
+            "title": "The Godfather Legacy",
+            "video": false,
+            "vote_average": 7.1,
+            "vote_count": 16
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/tYjyk4Ij7CwVOn2ovcXdRYffR9k.jpg",
+            "genre_ids": [
+                80,
+                18
+            ],
+            "id": 364150,
+            "original_language": "en",
+            "original_title": "The Godfather Epic: 1901-1959",
+            "overview": "The multigenerational saga of the rise and fall of the Corleone crime family. Story is told in chronological order, and numerous scenes that were deleted from each film have been restored.",
+            "popularity": 12.965,
+            "poster_path": "/xvT9RyO9UdNSc1NRhXnhTujlQWK.jpg",
+            "release_date": "1981-10-17",
+            "title": "The Godfather Epic: 1901-1959",
+            "video": true,
+            "vote_average": 8.908,
+            "vote_count": 152
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/fE0Xmb0GaAm1R5NkrMuPezjoGwS.jpg",
+            "genre_ids": [
+                35,
+                80,
+                10749
+            ],
+            "id": 70829,
+            "original_language": "ko",
+            "original_title": "The Last Godfather",
+            "overview": "Young-goo the son of mafia boss Don Carini, is too foolish to be part of the mafia elite. One day, Young-goo comes to his father and is trained by Tony V to be his father's successor. A few days later, Young-goo accidentally rescues Nancy, the only daughter of Don Bonfante, the boss of a rival mafia family. But Vinnie, an under-boss of the Bonfante family kidnapped her and fabricates that Young-goo has taken her. Vinnie's behavior provokes an armed conflict between the two families.",
+            "popularity": 6.327,
+            "poster_path": "/zLcKGxKn8qgrGaUZAWZY3Nvi5fr.jpg",
+            "release_date": "2010-12-29",
+            "title": "The Last Godfather",
+            "video": false,
+            "vote_average": 4.6,
+            "vote_count": 14
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/mDMCET9Ens5ANvZAWRpluBsMAtS.jpg",
+            "genre_ids": [
+                80,
+                18
+            ],
+            "id": 970689,
+            "original_language": "en",
+            "original_title": "The Godfather 1901–1959: The Complete Epic",
+            "overview": "The Godfather 1901–1959: The Complete Epic is a reduced, 386-minute version of the 1977 television miniseries, \"Mario Puzo's The Godfather: The Complete Novel for Television,\" released to video in 1981. Unlike the miniseries, which was presented in four segments (each with opening and closing credits), the Epic is presented as a single segment. In January 2016, HBO aired the Epic in its uncut and uncensored format, later making it available on its streaming platforms. The HBO showing contained most of the known deleted scenes, thereby lengthening the runtime of the Epic from its video release to 423 minutes.",
+            "popularity": 3.171,
+            "poster_path": "/DGCsKaQgcp4QkX7ulL1BMbkIkr.jpg",
+            "release_date": "1981-03-24",
+            "title": "The Godfather 1901–1959: The Complete Epic",
+            "video": true,
+            "vote_average": 9.3,
+            "vote_count": 3
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/nIiSCZvxDeCeXrOJnpbmRB8FcKH.jpg",
+            "genre_ids": [
+                28,
+                80,
+                18
+            ],
+            "id": 79026,
+            "original_language": "en",
+            "original_title": "El padrino",
+            "overview": "In the streets of East Los Angeles, Manny is a formidable drug dealer. Impressed by his extravagant lifestyle and prowess, his young son, Kilo, yearns to follow in his footsteps. Kilo resolves to learn how to prosper in the drug world, and his new life as a dealer begins. In a world where a man wants everything, he may end up with nothing.",
+            "popularity": 32.621,
+            "poster_path": "/10J7EQ8WvMYku8lcZrLewV2Ko4I.jpg",
+            "release_date": "2004-09-27",
+            "title": "El padrino: The Latin Godfather",
+            "video": false,
+            "vote_average": 6.982,
+            "vote_count": 55
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/c1vrJxyuKhswMm9IbRJJhsFXm0I.jpg",
+            "genre_ids": [
+                99,
+                10770
+            ],
+            "id": 56205,
+            "original_language": "en",
+            "original_title": "The Godfather Family: A Look Inside",
+            "overview": "A documentary on the making of the three Godfather films, with interviews and recollections from the film makers and cast. This feature also includes the original screen tests of some of the actors for \"The Godfather\" film, and some candid moments on the set of \"The Godfather: Part III.\"",
+            "popularity": 9.234,
+            "poster_path": "/jDdybr7reoVABPthX9OSlazvncD.jpg",
+            "release_date": "1990-07-12",
+            "title": "The Godfather Family: A Look Inside",
+            "video": false,
+            "vote_average": 7.667,
+            "vote_count": 39
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                35
+            ],
+            "id": 73725,
+            "original_language": "en",
+            "original_title": "The Godfather of Green Bay",
+            "overview": "Joe Keegan is the 'Rocky' of stand-up comedy. A fifteen-year comedy veteran who was pegged for stardom early on in his career but has blown every major audition he has ever had in legendary fashion. Fresh off a recent fiasco with a heckler that included a broken nose, Joe's friend Kenny tells him he can get them an audition for 'The Tonight Show' and that it's 'a can't miss.' The one catch is that it's at a roadside bar in tiny Pine Lake, Wisconsin, hometown of Tonight Show Talent scout, Harvey Skorik who never misses 'Rocktoberfest.' Having doubts but needing a break from L.A., Joe reluctantly agrees to go. Arriving in Wisconsin, Joe bombs his first night on stage when local emcee Dug sabotages him. Joe cannot get a break until he encounters his former high school English teacher, the beautiful Molly Mahoney who is also at a crossroads in her life.",
+            "popularity": 1.282,
+            "poster_path": "/83uAEy4jLR1QpkUmsx3YHTpP1vB.jpg",
+            "release_date": "2005-04-20",
+            "title": "The Godfather of Green Bay",
+            "video": false,
+            "vote_average": 3.6,
+            "vote_count": 7
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/pS8xPQ1HFsiiKfamKcLoh3yYVNJ.jpg",
+            "genre_ids": [
+                99,
+                10402
+            ],
+            "id": 485918,
+            "original_language": "en",
+            "original_title": "The Godfathers of Hardcore",
+            "overview": "Documentary following Roger Miret and Vinnie Stigma of the band, Agnostic Front who played a key role in defining, shaping and establishing the sound and cultural code of conduct for the still-thriving movement. Unlike the dozens of bands that have come and gone, Agnostic Front is still going strong.",
+            "popularity": 1.284,
+            "poster_path": "/xs0xxDawafML2seVqby8K0qWeRz.jpg",
+            "release_date": "2018-12-12",
+            "title": "The Godfathers of Hardcore",
+            "video": false,
+            "vote_average": 6.5,
+            "vote_count": 10
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/3otb50i2hzoToonuOaKn1ZQws9u.jpg",
+            "genre_ids": [
+                99,
+                10402
+            ],
+            "id": 606215,
+            "original_language": "en",
+            "original_title": "The Black Godfather",
+            "overview": "Follows the life of Clarence Avant, the ultimate, uncensored mentor and behind-the-scenes rainmaker in music, film, TV and politics.",
+            "popularity": 6.108,
+            "poster_path": "/3BQArnXPwM5nHeS1tlGKLY7eapP.jpg",
+            "release_date": "2019-06-07",
+            "title": "The Black Godfather",
+            "video": false,
+            "vote_average": 6.887,
+            "vote_count": 31
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                80,
+                28
+            ],
+            "id": 90020,
+            "original_language": "it",
+            "original_title": "La mano lunga del padrino",
+            "overview": "A  treacherous low-level mafioso greedily rips off a shipment of arms from his powerful godfather and tries to sell them to an especially dubious group of Arabs",
+            "popularity": 1.139,
+            "poster_path": "/eRwiJc2cFguRcx3sxNOIh63gCfJ.jpg",
+            "release_date": "1972-08-11",
+            "title": "The Long Arm of the Godfather",
+            "video": false,
+            "vote_average": 0.0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                35
+            ],
+            "id": 260889,
+            "original_language": "it",
+            "original_title": "L'altra faccia del padrino",
+            "overview": "The Godfather Don Vito Monreale knows, by chance, the Italian-American singer Nick Bouillon. Since the two are alike, Don Vito decided to exploit this similarity in his favour.",
+            "popularity": 2.041,
+            "poster_path": "/yFI6AyrblDaTkJu3iYpZhdSp8wx.jpg",
+            "release_date": "1973-05-03",
+            "title": "The Funny Face of the Godfather",
+            "video": false,
+            "vote_average": 2.0,
+            "vote_count": 1
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                99,
+                36
+            ],
+            "id": 454229,
+            "original_language": "en",
+            "original_title": "The Medici: Godfathers of the Renaissance",
+            "overview": "From a small Italian community in 15th-century Florence, the Medici family would rise to rule Europe in many ways. Using charm, patronage, skill, duplicity and ruthlessness, they would amass unparalleled wealth and unprecedented power. They would also ignite the most important cultural and artistic revolution in Western history -- the European Renaissance. But the forces of change the Medici helped unleash would one day topple their ordered world.",
+            "popularity": 1.691,
+            "poster_path": "/1d9JXkKlFS9c1mxdENuGlogWnUD.jpg",
+            "release_date": "2004-02-04",
+            "title": "The Medici: Godfathers of the Renaissance",
+            "video": false,
+            "vote_average": 7.3,
+            "vote_count": 7
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                99
+            ],
+            "id": 97227,
+            "original_language": "en",
+            "original_title": "The Godfathers of Mondo",
+            "overview": "A look at the careers of Gualtiero Jacopetti and Franco Prosperi who invented the mondo genre with MONDO CANE in 1962. It follows their career until their split in following the making of GOODBYE UNCLE TOM in 1971.",
+            "popularity": 1.25,
+            "poster_path": "/tPBaGJgrrMOZL3elLyNx4xyXwjk.jpg",
+            "release_date": "2003-10-01",
+            "title": "The Godfathers of Mondo",
+            "video": false,
+            "vote_average": 7.2,
+            "vote_count": 11
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/awi1iAqxSDDrC7eF7xEY0uQCgsB.jpg",
+            "genre_ids": [
+                28,
+                80,
+                53
+            ],
+            "id": 80755,
+            "original_language": "en",
+            "original_title": "The Black Godfather",
+            "overview": "The heroes in The Black Godfather are members of an African-American criminal organization. Like Brando in The Godfather, they're not averse to robbery and murder, but they do draw the line at narcotics. When the Mafia infiltrates the 'hood with dangerous drugs, the Black Godfather (Rod Perry) orders his minions to put an end to this perfidy.",
+            "popularity": 1.589,
+            "poster_path": "/barD9VpyEdNaVgD85sqfRCbq7Dx.jpg",
+            "release_date": "1974-09-03",
+            "title": "The Black Godfather",
+            "video": false,
+            "vote_average": 4.6,
+            "vote_count": 11
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/7qKkAKYhnIqZMQ9hWVUZ1zV6kLb.jpg",
+            "genre_ids": [
+                80
+            ],
+            "id": 260872,
+            "original_language": "it",
+            "original_title": "I contrabbandieri di Santa Lucia",
+            "overview": "A revolution in Iran halts a heroin shipment, but an alliance of crime families is set on getting it to the US.  They decide to run the drug through an unsuspecting network of good-natured, local smugglers in Naples, while an international anti-narcotics agent rushes to shut their operation down.  Betrayals and divided loyalties lead to a  final, bloody confrontation in America.",
+            "popularity": 2.49,
+            "poster_path": "/oDpqi8ktkScK2Y5IK1LomLfmEMZ.jpg",
+            "release_date": "1979-08-24",
+            "title": "The New Godfathers",
+            "video": false,
+            "vote_average": 6.5,
+            "vote_count": 5
+        }
+    ],
+    "total_pages": 5,
+    "total_results": 98
+}
