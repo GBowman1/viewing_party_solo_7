@@ -1,16 +1,12 @@
 <h1>Movie Results</h1>
 
-<% if @movies.empty? %>
-    <p>No movies found</p>
-<% else %>
-    <ul id="movie_list">
-        <% @movies.each_with_index do |movie, index| %>
-            <li id="movie_<%=index + 1%>">
-                <%= link_to movie[:title], user_movie_path(@user, movie[:id]) %> </br>
-                <%= movie[:vote_average] %>
-            </li>
-        <% end %>
-    </ul>
+<ul id="movie_list">
+    <% @movies.each_with_index do |movie, index| %>
+        <li id="movie_<%= index + 1 %>">
+        <%= link_to movie[:title], user_movie_path(@user, movie[:id]) %> <br/>
+        <%= movie[:vote_average] %>
+        </li>
+    <% end %>
+</ul>
 
-    <%= button_to 'Back to Discover', user_discover_index_path(@user), method: :get, class: 'btn btn-secondary' %>
-<% end %>
+<%= button_to 'Back to Discover', user_discover_index_path(@user), method: :get, class: 'btn btn-secondary' %>
