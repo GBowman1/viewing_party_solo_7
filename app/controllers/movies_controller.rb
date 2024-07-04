@@ -9,7 +9,7 @@ class MoviesController < ApplicationController
 
             json = JSON.parse(response.body, symbolize_names: true)
             @movies = json[:results]
-        else params[:top_rated].present?
+        elsif params[:top_rated].present?
             conn = Faraday.new(url: 'https://api.themoviedb.org') do |faraday|
                 faraday.headers['X-API-Key'] = Rails.application.credentials.tmdb[:key]
             end
@@ -17,6 +17,8 @@ class MoviesController < ApplicationController
 
             json = JSON.parse(response.body, symbolize_names: true)
             @movies = json[:results]
+        else 
+            @movies = []
         end
     end
 end
