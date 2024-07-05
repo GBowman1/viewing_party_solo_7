@@ -4,4 +4,8 @@ class MoviesController < ApplicationController
         @movies = MovieFacade.new.get_request(params)
     end
 
+    def show
+        @user = User.find(params[:user_id])
+        @movie = MovieFacade.new.get_movie(params)
+    end
 end

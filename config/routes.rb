@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   resources :users, only: %i[show create] do
     resources :discover, only: [:index]
-    resources :movies, only: %i[index show]
+    resources :movies, only: %i[index show] do
+      resources :viewing_party, only: %i[new create]
+    end
   end
 end

@@ -21,4 +21,9 @@ class MovieFacade
         Movie.new(movie_data)
         end
     end
+
+    def get_movie(params)
+        json = MovieService.movie_details(params[:id])
+        Movie.new(json)
+    end
 end

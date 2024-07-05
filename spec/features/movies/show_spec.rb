@@ -5,12 +5,15 @@ RSpec.describe 'Movies Index Page', type: :feature do
         @user = User.create!(name: 'Mike Tyson', email: 'miketyson@aol.com')
         @top_rated_response = File.read('spec/fixtures/top_rated_fixture.json')
         @search_response = File.read('spec/fixtures/search_fixture.json')
+        @movie_details_response = File.read('spec/fixtures/show_fixture.json')
 
         stub_request(:get, "https://api.themoviedb.org/3/discover/movie?api_key=#{Rails.application.credentials.tmdb[:key]}&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc").
         to_return(status: 200, body: @top_rated_response, headers: {})
 
         stub_request(:get, "https://api.themoviedb.org/3/search/movie?api_key=#{Rails.application.credentials.tmdb[:key]}&query=The%20Godfather&language=en-US&page=1").
         to_return(status: 200, body: @search_response, headers: {})
+
+        stub_request(:get, "https://api.themoviedb.org/3/movie/786892?api_key=#{Rails.application.credentials.tmdb[:key]}").to_return(status: 200, body: @movie_details_response, headers: {})
     end
 
     it 'shows movie details' do
@@ -49,6 +52,6 @@ RSpec.describe 'Movies Index Page', type: :feature do
         visit user_movie_path(@user, movie_id: 786892)
         click_button 'Create Viewing Party'
 
-        expect(current_path).to eq(new_user_party_path(@user))
+        expect(current_path).to eq(new_user_movie_viewing_party(@user))
     end
 end
