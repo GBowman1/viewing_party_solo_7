@@ -22,24 +22,6 @@ class MovieFacade
         end
     end
 
-    # def get_movie(params)
-    #     json = MovieService.movie_details(params[:id])
-    #     Movie.new(json)
-    # end
-
-    # def get_reviews(movie_id)
-    #     json = MovieService.movie_reviews(movie_id)
-    #     json[:results].map do |review_data|
-    #         Review.new(review_data)
-    #     end
-    # end
-
-    # def get_cast(movie_id)
-    #     json = MovieService.movie_cast(movie)
-    #     json[:cast].map do |cast_data|
-    #         Cast.new(cast_data)
-    #     end.first(10)
-    # end
     def get_movie_details(movie_id)
         details = MovieService.movie_details(movie_id)
         cast = get_cast(movie_id)
