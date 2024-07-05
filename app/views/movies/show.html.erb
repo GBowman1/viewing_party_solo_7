@@ -1,35 +1,36 @@
-<h1> <%= @movie.title %> </h1>
+<h1><%= @movie.title %></h1>
 
 <div id="movie_details">
-    <p> <%= @movie.summary %> </p>
-    <p> <%= @movie.vote_average %> </p>
-    <p> <% @movie.genres.join(", ") %> </p>
-    <p> <%= @movie.runtime %> </p>
+    <p><%= @movie.summary %></p>
+    <p>Vote Average: <%= @movie.vote_average %></p>
+    <p>Genres: <%= @movie.genres.join(", ") %></p>
+    <p>Runtime: <%= @movie.runtime %></p>
 </div>
 
 <div id="cast">
-    <h2> Cast </h2>
+    <h2>Cast</h2>
     <ul>
-        <% @cast.each do |actor| %>
-            <li> 
-                <p> Name: <%= actor.name %> </p>
-                <p> Character: <%= actor.character %> </p>
-            </li>
+        <% @movie.cast.each do |actor| %>
+        <li> 
+            <p>Name: <%= actor[:name] %></p>
+            <p>Character: <%= actor[:character] %></p>
+        </li>
         <% end %>
     </ul>
 </div>
 
 <div id="reviews">
-    <h2> Reviews </h2>
+    <h2>Reviews</h2>
     <ul>
-        <% @reviews.each do |review| %>
-            <li>
-                <p> <%= review.author %> </p>
-                <p> <%= review.content %> </p>
-            </li>
+        <% @movie.reviews.each do |review| %>
+        <li>
+            <p>Author: <%= review[:author] %></p>
+            <p>Review: <%= review[:content] %></p>
+        </li>
         <% end %>
     </ul>
 </div>
 
 <div id="page_actions">
+    <%= button_to 'Back to Discover', user_discover_index_path(@user), method: :get, class: 'btn btn-secondary' %>
 </div>
