@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Discover Index Page', type: :feature do
   before(:each) do
-    @user = User.create!(name: 'John Doe', email: 'johndoe@example.com')
+    @user = User.create!(name: 'Mike Tyson', email: 'miketyson@aol.com')
     @top_rated_response = File.read('spec/fixtures/top_rated_fixture.json')
     @search_response = File.read('spec/fixtures/search_fixture.json')
 
