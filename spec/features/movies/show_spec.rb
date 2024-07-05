@@ -27,7 +27,7 @@ RSpec.describe 'Movies Index Page', type: :feature do
 
         expect(page).to have_content("Furiosa: A Mad Max Saga")
         expect(page).to have_content("Vote Average: 7.715")
-        expect(page).to have_content("Runtime: ")
+        expect(page).to have_content("Runtime: 2 hours 29 minutes")
         expect(page).to have_content("Overview: As the world fell, young Furiosa is snatched from the Green Place of Many Mothers and falls into the hands of a great Biker Horde led by the Warlord Dementus. Sweeping through the Wasteland they come across the Citadel presided over by The Immortan Joe. While the two Tyrants war for dominance, Furiosa must survive many trials as she puts together the means to find her way home.")
         expect(page).to have_content("Genres: Action, Adventure, Science Fiction")
         expect(page).to have_content("Cast: ")

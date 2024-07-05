@@ -36,4 +36,21 @@ class MovieService
 
         JSON.parse(response.body, symbolize_names: true)
     end
+
+    def self.movie_reviews(id)
+        response = conn.get("3/movie/#{id}/reviews", {
+            api_key: Rails.application.credentials.tmdb[:key],
+            page: 1
+        })
+
+        JSON.parse(response.body, symbolize_names: true)
+    end
+
+    def self.movie_cast(id)
+        response = conn.get("3/movie/#{id}/credits", {
+            api_key: Rails.application.credentials.tmdb[:key]
+        })
+
+        JSON.parse(response.body, symbolize_names: true)
+    end
 end
