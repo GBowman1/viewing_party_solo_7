@@ -3,8 +3,8 @@
 <ul id="movie_list">
     <% @movies.each_with_index do |movie, index| %>
         <li id="movie_<%= index + 1 %>">
-            <%= link_to movie.title, user_movie_path(@user, @movie.id) %> <br/>
-            <%= movie.vote_average %>
+            <%= link_to movie.title, user_movie_path(@user, movie.id) %> <br/>
+            Vote Average: <%= movie.vote_average %>
         </li>
     <% end %>
 </ul>

@@ -49,13 +49,17 @@ class MovieFacade
         Movie.new(details)
     end
 
-    def get_reviews(movie_id)
-        json = MovieService.movie_reviews(movie_id)
-        json[:results]
-    end
-
     def get_cast(movie_id)
         json = MovieService.movie_cast(movie_id)
-        json[:cast]
+        json[:cast].first(10).map do |cast_data|
+            { character: cast_data[:character], name: cast_data[:name] }
+        end
+    end
+
+    def get_reviews(movie_id)
+        json = MovieService.movie_reviews(movie_id)
+        json[:results].map do |review_data|
+            { author: review_data[:author], content: review_data[:content] }
+        end
     end
 end

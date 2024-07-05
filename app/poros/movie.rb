@@ -15,25 +15,22 @@ class Movie
         @genres = genres_arr(data[:genres])
         @runtime = runtime_conversion(data[:runtime])
         @summary = data[:overview]
-        @cast = format_cast(data[:cast])
-        @reviews = format_reviews(data[:reviews])
+        @cast = data[:cast] || []
+        @reviews = data[:reviews] || []
     end
 
     def genres_arr(genres_data)
+        return [] if genres_data.nil?
         genres_data.map { |genre| genre[:name] }
     end
 
     def runtime_conversion(runtime)
-        hours = runtime / 60
-        minutes = runtime % 60
-        "#{hours} hr #{minutes} min"
-    end
-
-    def format_cast(cast_data)
-        cast_data.first(10).map { |cast| { character: cast[:character], name: cast[:name] } }
-    end
-
-    def format_reviews(reviews_data)
-        reviews_data.map { |review| { author: review[:author], content: review[:content] } }
+        if runtime.nil?
+            return "N/A"
+        else
+            hours = runtime / 60
+            minutes = runtime % 60
+            "#{hours} hr #{minutes} min"
+        end
     end
 end

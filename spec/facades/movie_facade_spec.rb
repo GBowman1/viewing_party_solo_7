@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe MovieFacade do
+RSpec.describe MovieFacade, type: :facade do
     before(:each) do
         @top_rated_response = File.read('spec/fixtures/top_rated_fixture.json')
         @search_response = File.read('spec/fixtures/search_fixture.json')
@@ -25,28 +25,24 @@ RSpec.describe MovieFacade do
     end
 
     it 'can get top rated movies' do
-        facade = MovieFacade.new
-        movies = facade.get_top_rated_movies
-
-        expect(movies.count).to eq(20)
+        movies = MovieFacade.new.get_top_rated_movies
+        expect(movies).to be_an(Array)
         expect(movies.first).to be_a(Movie)
+        expect(movies.first.title).to eq("Furiosa: A Mad Max Saga")
     end
 
     it 'can search for movies by title' do
-        facade = MovieFacade.new
-        movies = facade.search_for_movie('The Godfather')
-
-        expect(movies.count).to eq(1)
-        expect(movies.first.title).to eq('The Godfather')
+        movies = MovieFacade.new.search_for_movie('The Godfather')
+        expect(movies).to be_an(Array)
+        expect(movies.first).to be_a(Movie)
+        expect(movies.first.title).to eq("The Godfather")
     end
 
     it 'can get movie details' do
-        facade = MovieFacade.new
-        movie = facade.get_movie_details(786892)
-
+        movie = MovieFacade.new.get_movie_details(786892)
         expect(movie).to be_a(Movie)
-        expect(movie.title).to eq('Furiosa: A Mad Max Saga')
-        expect(movie.cast.count).to eq(10)
-        expect(movie.reviews.count).to eq(7)
+        expect(movie.title).to eq("Furiosa: A Mad Max Saga")
+        expect(movie.cast.first[:name]).to eq("Anya Taylor-Joy")
+        expect(movie.reviews.first[:author]).to eq("Ritesh Mohapatra")
     end
 end

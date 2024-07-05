@@ -1,10 +1,11 @@
 <h1><%= @movie.title %></h1>
 
 <div id="movie_details">
-    <p><%= @movie.summary %></p>
+    <p>Overview: <%= @movie.summary %></p>
     <p>Vote Average: <%= @movie.vote_average %></p>
     <p>Genres: <%= @movie.genres.join(", ") %></p>
     <p>Runtime: <%= @movie.runtime %></p>
+    <p>Total Reviews: <%= @movie.reviews.count %></p>
 </div>
 
 <div id="cast">
@@ -19,11 +20,11 @@
     </ul>
 </div>
 
-<div id="reviews">
+<div id="review_list">
     <h2>Reviews</h2>
     <ul>
-        <% @movie.reviews.each do |review| %>
-        <li>
+        <% @movie.reviews.each_with_index do |review, index| %>
+        <li id="review_<%=index + 1%>">
             <p>Author: <%= review[:author] %></p>
             <p>Review: <%= review[:content] %></p>
         </li>
