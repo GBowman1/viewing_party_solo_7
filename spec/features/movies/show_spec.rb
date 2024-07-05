@@ -21,11 +21,34 @@ RSpec.describe 'Movies Index Page', type: :feature do
             click_link("Furiosa: A Mad Max Saga")
         end
         expect(current_path).to eq(user_movie_path(@user, movie_id: 786892))
+
+        expect(page).to have_content("Furiosa: A Mad Max Saga")
+        expect(page).to have_content("Vote Average: 7.715")
+        expect(page).to have_content("Runtime: ")
+        expect(page).to have_content("Overview: As the world fell, young Furiosa is snatched from the Green Place of Many Mothers and falls into the hands of a great Biker Horde led by the Warlord Dementus. Sweeping through the Wasteland they come across the Citadel presided over by The Immortan Joe. While the two Tyrants war for dominance, Furiosa must survive many trials as she puts together the means to find her way home.")
+        expect(page).to have_content("Genres: Action, Adventure, Science Fiction")
+        expect(page).to have_content("Cast: ")
+        expect(page).to have_content("Total Reviews: ")
+
+        within '#review_list' do
+            within '#review_1' do
+                expect(page).to have_content("Author: ")
+                expect(page).to have_content("Review: ")
+            end
+        end
     end
 
     it 'has a button to return to the discover page' do
+        visit user_movie_path(@user, movie_id: 786892)
+        click_button 'Back to Discover'
+
+        expect(current_path).to eq(user_discover_path(@user))
     end
-    
+
     it 'has a button to create a viewing party' do
+        visit user_movie_path(@user, movie_id: 786892)
+        click_button 'Create Viewing Party'
+
+        expect(current_path).to eq(new_user_party_path(@user))
     end
 end
