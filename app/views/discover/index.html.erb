@@ -1,8 +1,8 @@
 <div id="page_actions">
-  <%= button_to 'Top Rated Movies', user_movies_path(@user, search: 'toprated'), method: :get, class: 'btn btn-primary' %>
-  <%= form_tag user_movies_path(@user), method: :get, class: "form-inline" do %>
+  <%= button_to 'Top Rated Movies', user_movies_path(@user), method: :get, class: 'btn btn-primary' %>
+
+  <%= form_with url: user_movies_path(@user), method: :get, local: true, class: "form-inline" do %>
     <div class="form-group search-field">
-      <%= hidden_field_tag :search, 'query' %>
       <%= text_field_tag :movie, params[:movie], class: "form-control", placeholder: "Search for a movie" %>
       <%= submit_tag "Search", class: "btn btn-primary" %>
     </div>

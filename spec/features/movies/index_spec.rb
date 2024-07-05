@@ -1,47 +1,44 @@
 require 'rails_helper'
 
-RSpec.describe 'Movies Index Page' do
-    feature 'visitor can view movies results' do
-        before :each do
-            @user = User.create!(name: 'Mike Tyson', email: 'miketyson@aol.com')
-            @json_response = File.read('spec/fixtures/top_rated_fixture.json')
-            stub_request(:get, "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc").with(
-                headers: {
-                    'Accept'=>'*/*',
-                    'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-                    'User-Agent'=>'Faraday v2.9.2',
-                    'X-Api-Key'=>'aa8f476e09c282147d59ae9a584801f6'
-                    }).to_return(status: 200, body: @json_response.to_json, headers: {})
-                    
-            @search = File.read('spec/fixtures/search_fixture.json')
-            stub_request(:get, "https://api.themoviedb.org/3/search/movie?query=The%20Godfather").with(
-                headers: {
-                'Accept'=>'*/*',
-                'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-                'User-Agent'=>'Faraday v2.9.2',
-                'X-Api-Key'=>'aa8f476e09c282147d59ae9a584801f6'
-                }).
-                to_return(status: 200, body: @search.to_json, headers: {})
-                # require 'pry';binding.pry
-        end
+RSpec.describe 'Movies Index Page', type: :feature do
+    before(:each) do
+        @user = User.create!(name: 'John Doe', email: 'johndoe@example.com')
+        @top_rated_response = File.read('spec/fixtures/top_rated_fixture.json')
+        @search_response = File.read('spec/fixtures/search_fixture.json')
 
-        it 'visitor can see top rated movies' do
-            visit user_discover_index_path(@user)
-            within '#page_actions' do
-                click_button 'Top Rated Movies'
-            end
-            expect(current_path).to eq(user_movies_path(@user))
+        stub_request(:get, "https://api.themoviedb.org/3/discover/movie?api_key=#{Rails.application.credentials.tmdb[:key]}&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc").
+        to_return(status: 200, body: @top_rated_response, headers: {})
 
-            # expect(@json_response['results'].count).to eq(20)
-            
+        stub_request(:get, "https://api.themoviedb.org/3/search/movie?api_key=#{Rails.application.credentials.tmdb[:key]}&query=The%20Godfather&language=en-US&page=1").
+        to_return(status: 200, body: @search_response, headers: {})
+    end
 
-            within '#movie_1' do
-                expect(page).to have_link("Furiosa: A Mad Max Saga")
-                expect(page).to have_content("7.715")
-            end
+    it 'shows top-rated movies with titles as links and vote averages' do
+        visit user_movies_path(@user)
+
+        within '#movie_1' do
+        expect(page).to have_link("Furiosa: A Mad Max Saga")
+        expect(page).to have_content("7.715")
         end
-        
-        scenario 'Visitor can return to discover page' do
+    end
+
+    it 'shows searched movies with titles as links and vote averages' do
+        visit user_discover_index_path(@user)
+        fill_in 'movie', with: 'The Godfather'
+        click_button 'Search'
+
+        expect(current_path).to eq(user_movies_path(@user))
+
+        within '#movie_1' do
+        expect(page).to have_link("The Godfather")
+        expect(page).to have_content("8.7")
         end
+    end
+
+    it 'has a button to return to the discover page' do
+        visit user_movies_path(@user)
+        click_button 'Back to Discover'
+
+        expect(current_path).to eq(user_discover_index_path(@user))
     end
 end
